@@ -22,7 +22,7 @@ The application.properties file must at least contain the following lines:
 
 
 # Execution
-Before you run the container you must pull the image for the MapTiler Pro container:
+Before you run the container you must pull the image for the [MapTiler Pro container](https://hub.docker.com/r/klokantech/maptiler/):
 
     docker pull klokantech/maptiler
 
@@ -31,6 +31,7 @@ To run the container you can do it the following way:
 
     docker run --name tiler-service -v /var/run/docker.sock:/var/run/docker.sock \
     -v $HOME/data:/data/tiles \
-    -v <where you stored application.properties>/application.properties:/data/properties/application.properties dmadk/tiler-service
+    -v <where you stored application.properties>/application.properties:/data/properties/application.properties \
+    dmadk/tiler-service
 
 The reason why the container needs to mount the Docker socket is because it needs to be able to start MapTiler Pro in a seperate container.
