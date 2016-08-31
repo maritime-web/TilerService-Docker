@@ -22,7 +22,7 @@ The application.properties file must at least contain the following lines:
 The variable `tracing` can be set to `false` to disable detailed tracing. It is by default set to `true`.
 
 # Execution
-Before you run the container you must pull the image for the [MapTiler Pro container](https://hub.docker.com/r/klokantech/maptiler/):
+Before you run the container you must pull the image for the [MapTiler Pro container](https://hub.docker.com/r/klokantech/maptiler/) and for the [TileServer](https://hub.docker.com/r/klokantech/tileserver-php/):
 
     docker pull klokantech/maptiler
     docker pull klokantech/tileserver-php
