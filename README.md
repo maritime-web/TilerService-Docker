@@ -19,13 +19,13 @@ The application.properties file must at least contain the following lines:
 
     tiles.hostDirectory = <the absolute path to the directory where images to be tiled are stored>
 
-The variable `tracing` can be set to `false` to disable detailed tracing. It is by default set to `true`. 
+The variable `tracing` can be set to `false` to disable detailed tracing. It is by default set to `true`.
 
 # Execution
 Before you run the container you must pull the image for the [MapTiler Pro container](https://hub.docker.com/r/klokantech/maptiler/):
 
     docker pull klokantech/maptiler
-
+    docker pull klokantech/tileserver-php
 
 To run the container you can do it the following way:
 
