@@ -21,7 +21,8 @@ Before you run the container you must pull the image for the [MapTiler Pro conta
 
     docker pull klokantech/maptiler
     docker pull klokantech/tileserver-php
-    docker pull dmadk/satellite-consumer
+    docker pull dmadk/satellite-consumer:latest
+    docker pull dmadk/satellite-consumer:newest
 
 To run the container you can do it the following way:
 
